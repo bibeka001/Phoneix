@@ -28,27 +28,26 @@ class Light extends Component {
               <table className="table table-hover">
                 <thead className="thead-primary">
                   <tr>
-                      <th>Name</th>
-                      <th>Username</th>
-                      <th>email</th>
-                      <th>Address</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>email</th>
+                    <th>Address</th>
                   </tr>
                 </thead>
                 <tbody>
-                    {this.state.contacts.length> 0 ? (
-                        <React.Fragment>
-                            {this.state.contacts.map((contact) =>{
-                                return(
-                                    <tr>
-                                        <td>{contact.name}</td>
-                                        <td>{contact.username}</td>
-                                        <td>{contact.email}</td>
-                                    </tr>
-                                )
-                            })
-                            
-                        <React.Fragment>
-                    ) : null}
+                  {this.state.contacts.length > 0 ? (
+                    <React.Fragment>
+                      {this.state.contacts.map((contact) => {
+                        return (
+                          <tr>
+                            <td>{contact.name}</td>
+                            <td>{contact.username}</td>
+                            <td>{contact.email}</td>
+                          </tr>
+                        );
+                      })}
+                    </React.Fragment>
+                  ) : null}
                 </tbody>
               </table>
             </div>
